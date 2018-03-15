@@ -1,0 +1,20 @@
+{
+ "manifest_version": 2,
+ "name": "Sparsh's Extension",
+ "description": "My own. My Preciousss.",
+ "version": "1",
+ "author": "Sparsh Samir",
+ "content_scripts": [{
+  "matches": [
+    "<all_urls>"
+  ],
+  "js": ["jquery2.min.js", "newtab.js"]
+}],
+"browser_action": {
+   "default_title": "Have a good day"
+ },
+"chrome_url_overrides" : {
+  "newtab": "newtab.html"
+},
+ "permissions": ["activeTab","webNavigation", "storage"]
+}
